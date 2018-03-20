@@ -190,7 +190,7 @@ regexp = #\"#'[^'\\\\]*(?:\\\\.[^'\\\\]*)*'\"
                       (nt (keyword (clojure.string/upper-case (apply str %&))))
                       (nt (keyword (apply str %&))))
    ; since rulenames are case insensitive, convert it to upper case internally to be consistent
-   :alternation alt
+   :alternation ord
    :concatenation cat
    :repeat (fn [& items]
              (case (count items)
